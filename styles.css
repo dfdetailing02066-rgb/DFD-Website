@@ -1426,10 +1426,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .stat-tiles { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
   .m-stack { grid-template-columns: 1fr !important; }
 
-  /* Tighter vertical rhythm so sections aren't enormous on a phone */
+  /* Service-area boxes: 2-up instead of ~40 full-width bars stacked one per row */
+  .area-box-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+
+  /* Consistent vertical rhythm — several sections hardcode big padding that
+     made the page alternate between tight and huge gaps (the "choppy" feel) */
   .section { padding: 48px 0; }
   .section-tight, .section-sm { padding: 36px 0; }
   .closing-cta { padding: 56px 0; }
+  #service-areas { padding: 44px 0 !important; }
 
   /* Hero fits the viewport better and text isn't crammed against edges */
   .hero { min-height: 440px; }

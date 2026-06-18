@@ -337,9 +337,27 @@
   .marine-steps-grid {
     grid-template-columns: 1fr;
   }
-  .masonry-grid {
-    columns: 1;
+}
+
+/* Mobile: bring the big 80px section padding in line with the rest of the
+   site (48px) so vertical rhythm is consistent, and keep the gallery 2-up */
+@media (max-width: 768px) {
+  .marine-steps,
+  .marine-why,
+  .marine-faq-section,
+  .marine-masonry {
+    padding: 48px 0;
   }
+  .marine-steps-grid,
+  .marine-why-grid,
+  .marine-faq-grid {
+    margin-top: 28px;
+  }
+  .masonry-grid {
+    columns: 2;
+    column-gap: 12px;
+  }
+  .masonry-item { margin-bottom: 12px; }
 }
 
 /* --- Ceramic hero (top-of-marine compact section) --- */
