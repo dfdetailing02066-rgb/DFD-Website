@@ -31,42 +31,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=26">
+<link rel="preload" as="image" type="image/webp" href="assets/opt/porsche-911-ceramic-coating-1080.webp" fetchpriority="high">
 <script src="images.js?v=16"></script>
 <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Ceramic Coating",
-    "name": "Ceramic Coating",
-    "description": "SystemX-certified ceramic coating with 2, 6, and 10-year paint protection, applied mobile across Eastern Massachusetts.",
-    "url": "https://diamondfinishdetailing.net/ceramic.html",
-    "provider": {
-      "@type": "AutoWash",
-      "name": "Diamond Finish Detailing",
-      "url": "https://diamondfinishdetailing.net/",
-      "telephone": "+1-781-424-3314"
-    },
-    "areaServed": { "@type": "AdministrativeArea", "name": "Eastern Massachusetts" },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Ceramic Coating Packages",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crystal+ (2-Year)" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pro+ (6-Year)" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Max G+ (10-Year)" } }
-      ]
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Ceramic Coating",
+  "name": "Ceramic Coating",
+  "description": "SystemX-certified ceramic coating with 2, 6, and 10-year paint protection, applied mobile across Eastern Massachusetts.",
+  "url": "https://diamondfinishdetailing.net/ceramic",
+  "provider": { "@id": "https://diamondfinishdetailing.net/#business" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "South Shore, Massachusetts" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Ceramic Coating Packages",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondfinishdetailing.net/" },
-      { "@type": "ListItem", "position": 2, "name": "Ceramic Coating", "item": "https://diamondfinishdetailing.net/ceramic.html" }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crystal+ (2-Year)" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pro+ (6-Year)" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Max G+ (10-Year)" } }
     ]
   }
-]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondfinishdetailing.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Ceramic Coating", "item": "https://diamondfinishdetailing.net/ceramic" }
+  ]
+}
 </script>
 <style>
   .benefits-grid {
@@ -131,7 +127,7 @@
 <!-- HERO -->
 <section class="hero" data-screen-label="01 Ceramic Hero">
   <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1600&q=80&auto=format&fit=crop" data-img="heroCeramic" alt="Water beading on ceramic-coated black paint" onerror="handleImgError(this)">
+    <img src="assets/opt/porsche-911-ceramic-coating-1080.webp" width="1080" height="1080" alt="Water beading on ceramic-coated black paint" fetchpriority="high" loading="eager" decoding="async" data-img="heroCeramic" onerror="handleImgError(this)">
   </div>
   <div class="container hero-content">
     <div class="marine-hero-rating" style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 14px; font-weight: 600; background: rgba(0,0,0,0.5); padding: 8px 16px; border-radius: 100px; width: fit-content;">
@@ -154,7 +150,7 @@
     <div class="grid-3" style="grid-template-columns: 1fr 1.2fr 1fr; gap: 48px; align-items: center;">
       <!-- Image Column -->
       <div>
-        <img src="assets/porsche-911.png" alt="Glossy Porsche 911" loading="lazy" style="width: 100%; height: 360px; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/porsche-911-ceramic-coating-540.avif 540w, assets/opt/porsche-911-ceramic-coating-1080.avif 1080w" sizes="(max-width: 900px) 100vw, 50vw"><source type="image/webp" srcset="assets/opt/porsche-911-ceramic-coating-540.webp 540w, assets/opt/porsche-911-ceramic-coating-1080.webp 1080w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/opt/porsche-911-ceramic-coating-1080.jpg" width="1080" height="1080" alt="Glossy Porsche 911" loading="lazy" decoding="async" style="width: 100%; height: 360px; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);" onerror="handleImgError(this)"></picture>
       </div>
       
       <!-- Content Column -->
@@ -179,7 +175,7 @@
 
       <!-- SystemX Quality Column -->
       <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; border-left: 1px solid #eee; padding-left: 32px;">
-        <img src="assets/SystemX%20logo.png" alt="SystemX Ceramic Protection" style="height: 130px; width: auto; object-fit: contain;">
+        <picture><source type="image/avif" srcset="assets/opt/systemx-logo-500.avif 500w, assets/opt/systemx-logo-1000.avif 1000w" sizes="(max-width: 1080px) 52px, 85px"><source type="image/webp" srcset="assets/opt/systemx-logo-500.webp 500w, assets/opt/systemx-logo-1000.webp 1000w" sizes="(max-width: 1080px) 52px, 85px"><img src="assets/opt/systemx-logo-1000.png" width="1000" height="333" alt="SystemX Ceramic Protection" loading="lazy" decoding="async" style="height: 130px; width: auto; object-fit: contain;"></picture>
         <p style="color: #666; font-size: 14px; line-height: 1.5; font-weight: 500; margin: 0;">
           Certified SystemX installer. Manufacturer-backed warranties—up to 10 years for vehicles, 5 for boats.
         </p>
@@ -470,7 +466,7 @@
 
       <!-- Right Column: Tall Image -->
       <div style="height: 100%;">
-        <img src="assets/porsche-911.png" alt="Ceramic Coated Vehicle" loading="lazy" style="width: 100%; height: 100%; min-height: 500px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/porsche-911-ceramic-coating-540.avif 540w, assets/opt/porsche-911-ceramic-coating-1080.avif 1080w" sizes="(max-width: 900px) 100vw, 50vw"><source type="image/webp" srcset="assets/opt/porsche-911-ceramic-coating-540.webp 540w, assets/opt/porsche-911-ceramic-coating-1080.webp 1080w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/opt/porsche-911-ceramic-coating-1080.jpg" width="1080" height="1080" alt="Ceramic Coated Vehicle" loading="lazy" decoding="async" style="width: 100%; height: 100%; min-height: 500px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" onerror="handleImgError(this)"></picture>
       </div>
     </div>
   </div>

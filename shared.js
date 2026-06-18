@@ -11,7 +11,7 @@
 <header class="site-header" style="border-bottom: none !important;">
   <div class="container nav">
     <a href="index.html" class="logo">
-      <img src="assets/dfd-logo.png" alt="Diamond Finish Detailing" class="logo-img">
+      <picture><source type="image/avif" srcset="assets/opt/dfd-logo-300.avif 300w, assets/opt/dfd-logo-600.avif 600w" sizes="(max-width: 1080px) 52px, 85px"><source type="image/webp" srcset="assets/opt/dfd-logo-300.webp 300w, assets/opt/dfd-logo-600.webp 600w" sizes="(max-width: 1080px) 52px, 85px"><img class="logo-img" src="assets/opt/dfd-logo-600.png" width="600" height="600" alt="Diamond Finish Detailing" fetchpriority="high" loading="eager" decoding="async"></picture>
     </a>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -38,7 +38,7 @@
     <div class="footer-grid">
       <div>
         <a href="index.html" class="logo logo-footer">
-          <img src="assets/dfd-logo.png" alt="Diamond Finish Detailing" class="logo-img">
+          <picture><source type="image/avif" srcset="assets/opt/dfd-logo-300.avif 300w, assets/opt/dfd-logo-600.avif 600w" sizes="(max-width: 1080px) 52px, 85px"><source type="image/webp" srcset="assets/opt/dfd-logo-300.webp 300w, assets/opt/dfd-logo-600.webp 600w" sizes="(max-width: 1080px) 52px, 85px"><img class="logo-img" src="assets/opt/dfd-logo-600.png" width="600" height="600" alt="Diamond Finish Detailing" fetchpriority="high" loading="eager" decoding="async"></picture>
         </a>
         <p class="footer-tagline">Premium mobile auto and marine detailing serving Eastern Massachusetts. Licensed, insured, SystemX Certified - and backed by our 100% satisfaction guarantee.</p>
         <div class="trust-badges">
@@ -65,7 +65,7 @@
         <ul>
           <li><a href="tel:7814243314">(781) 424-3314</a></li>
           <li><a href="mailto:DFdetailing02066@gmail.com">DFdetailing02066@gmail.com</a></li>
-          <li>Everyday: 7am - 9pm</li>
+          <li>Everyday: 7am - 8pm</li>
           <li>Eastern Massachusetts</li>
         </ul>
       </div>

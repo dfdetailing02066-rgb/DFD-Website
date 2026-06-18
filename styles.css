@@ -1428,13 +1428,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
   /* Promo strip scrolls away; header sticks to the very top (avoids overlap
      when the strip text wraps to multiple lines on narrow screens) */
-  .promo-strip { position: static; font-size: 12px; line-height: 1.4; }
+  .promo-strip { position: static; font-size: 11px; line-height: 1.4;
+    letter-spacing: 0; padding: 8px 6px; white-space: nowrap; }
+  /* Shrink the stars and tighten their spacing so the whole row fits on a
+     single line at 390px */
+  .promo-strip .stars { font-size: 10px; letter-spacing: 0; margin-right: 5px; }
   .site-header { top: 0; }
 
   /* Collapse layouts whose inline grid-template-columns beat the class media
      queries. !important is required to override the element's inline style. */
   .grid-2, .grid-3 { grid-template-columns: 1fr !important; gap: 28px !important; }
-  .stat-tiles { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+  /* Three stat boxes stay in a single row of equal columns on phones.
+     Reduced gap, inner padding, and font sizes keep them readable with no
+     overflow at 390px. !important overrides the elements' inline styles. */
+  .stat-tiles { grid-template-columns: repeat(3, 1fr) !important; gap: 8px !important; }
+  .stat-tile { padding: 12px 8px !important; display: flex !important;
+    flex-direction: column; justify-content: center; align-items: center; }
+  .stat-num { font-size: 17px !important; }
+  .stat-label { font-size: 9px !important; letter-spacing: 0; }
   .m-stack { grid-template-columns: 1fr !important; }
 
   /* Service-area boxes: 2-up instead of ~40 full-width bars stacked one per row */
@@ -1449,7 +1460,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
   /* Hero fits the viewport better and text isn't crammed against edges */
   .hero { min-height: 440px; }
-  .hero-content { padding: 40px 0; max-width: 100%; }
+  .hero-content { padding: 40px 20px; max-width: 100%; }
   .hero-split { padding: 48px 0; }
 
   /* Full-width, easy-to-tap primary actions */
@@ -1462,12 +1473,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   /* Light strip / booking nudge already stack; keep the headline readable */
   .light-strip h3 { font-size: 24px; }
 
-  /* Hero heading: proportional on phones */
-  .hero .display { font-size: clamp(28px, 8vw, 38px); line-height: 1.08; }
+  /* Hero heading: proportional on phones — slightly smaller so it sits
+     within the new 20px side margins without crowding the edges */
+  .hero .display { font-size: clamp(25px, 7vw, 34px); line-height: 1.1; }
 }
 
 @media (max-width: 480px) {
-  .stat-tiles { grid-template-columns: 1fr 1fr; }
+  /* Keep all three stat boxes on one row (see 768px block) */
+  .stat-tiles { grid-template-columns: repeat(3, 1fr) !important; }
   .area-col ul { grid-template-columns: 1fr; }
   .btn { padding: 13px 18px; }
   .display { font-size: clamp(32px, 9vw, 40px); }

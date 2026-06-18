@@ -31,42 +31,71 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=26">
+<link rel="preload" as="image" type="image/webp" href="assets/opt/bmw-x5m-detail-1400.webp" fetchpriority="high">
 <script src="images.js?v=16"></script>
 <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Auto Detailing",
-    "name": "Mobile Auto Detailing",
-    "description": "Mobile interior, full, and paint-correction auto detailing brought to your driveway across Eastern Massachusetts.",
-    "url": "https://diamondfinishdetailing.net/auto.html",
-    "provider": {
-      "@type": "AutoWash",
-      "name": "Diamond Finish Detailing",
-      "url": "https://diamondfinishdetailing.net/",
-      "telephone": "+1-781-424-3314"
-    },
-    "areaServed": { "@type": "AdministrativeArea", "name": "Eastern Massachusetts" },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Auto Detailing Packages",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Detail" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Detail" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diamond Detail" } }
-      ]
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Auto Detailing",
+  "name": "Mobile Auto Detailing",
+  "description": "Mobile interior, full, and paint-correction auto detailing brought to your driveway across Eastern Massachusetts.",
+  "url": "https://diamondfinishdetailing.net/auto",
+  "provider": { "@id": "https://diamondfinishdetailing.net/#business" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "South Shore, Massachusetts" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Auto Detailing Packages",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondfinishdetailing.net/" },
-      { "@type": "ListItem", "position": 2, "name": "Auto Detailing", "item": "https://diamondfinishdetailing.net/auto.html" }
+      { "@type": "Offer", "priceCurrency": "USD", "price": "209", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": "209" }, "itemOffered": { "@type": "Service", "name": "Interior Detail" } },
+      { "@type": "Offer", "priceCurrency": "USD", "price": "265", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": "265" }, "itemOffered": { "@type": "Service", "name": "Full Detail" } },
+      { "@type": "Offer", "priceCurrency": "USD", "price": "395", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": "395" }, "itemOffered": { "@type": "Service", "name": "Diamond Detail" } }
     ]
   }
-]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondfinishdetailing.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Auto Detailing", "item": "https://diamondfinishdetailing.net/auto" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is mobile detailing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Our professional detailers come to your home, office, or marina with all the tools, products, water, and power needed to clean and restore your vehicle." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a service take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most appointments range from 2 to 5 hours depending on the size and condition of your vehicle." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to provide water or electricity?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Our trucks are completely self-contained - we bring our own water and generators." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you licensed and insured?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - fully licensed and insured. Every job, every vehicle, every customer is covered." }
+    },
+    {
+      "@type": "Question",
+      "name": "Same-day appointments?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often, yes. Call (781) 424-3314 to check today's availability." }
+    }
+  ]
+}
 </script>
 
 <style>
@@ -93,7 +122,7 @@
 <!-- HERO -->
 <section class="hero" data-screen-label="01 Auto Hero">
   <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1600&q=80&auto=format&fit=crop" data-img="heroAuto" alt="Sleek black sports car detailed to a high gloss" onerror="handleImgError(this)">
+    <img src="assets/opt/bmw-x5m-detail-1400.webp" width="1400" height="933" alt="Sleek black sports car detailed to a high gloss" fetchpriority="high" loading="eager" decoding="async" data-img="heroAuto" onerror="handleImgError(this)">
   </div>
   <div class="container hero-content">
     <span class="eyebrow">Auto Detailing</span>
@@ -203,7 +232,7 @@
   <div class="container" style="padding: 32px 0;">
     <div class="m-stack" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center;">
       <div class="center">
-        <img src="assets/SystemX%20logo.png" alt="SystemX Ceramic Coating" style="max-width: 420px; width: 100%; height: auto;" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/systemx-logo-500.avif 500w, assets/opt/systemx-logo-1000.avif 1000w" sizes="(max-width: 1080px) 52px, 85px"><source type="image/webp" srcset="assets/opt/systemx-logo-500.webp 500w, assets/opt/systemx-logo-1000.webp 1000w" sizes="(max-width: 1080px) 52px, 85px"><img src="assets/opt/systemx-logo-1000.png" width="1000" height="333" alt="SystemX Ceramic Coating" loading="lazy" decoding="async" style="max-width: 420px; width: 100%; height: auto;" onerror="handleImgError(this)"></picture>
       </div>
       <div>
         <h3 class="headline" style="font-size: clamp(24px, 3.5vw, 32px); margin-bottom: 20px;">Want protection that lasts years, not months?</h3>
@@ -246,7 +275,7 @@
         </div>
       </div>
       <div class="split-photo">
-        <img src="assets/bmw-x5m.png" alt="Pristine BMW X5M after a Diamond Finish detail" loading="lazy" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/bmw-x5m-detail-700.avif 700w, assets/opt/bmw-x5m-detail-1400.avif 1400w" sizes="(max-width: 900px) 100vw, 50vw"><source type="image/webp" srcset="assets/opt/bmw-x5m-detail-700.webp 700w, assets/opt/bmw-x5m-detail-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/opt/bmw-x5m-detail-1400.jpg" width="1400" height="933" alt="Pristine BMW X5M after a Diamond Finish detail" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture>
       </div>
     </div>
   </div>
@@ -313,14 +342,14 @@
       <h2 class="headline">Recent auto details.</h2>
     </div>
     <div class="portfolio-grid">
-      <div class="portfolio-item"><img src="assets/porsche-truck.png" alt="Porsche with DFD detailing truck" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="portfolio-item"><img src="assets/cadillac-escalade.png" alt="Cadillac Escalade detail" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="portfolio-item"><img src="assets/bmw-x5m.png" alt="BMW X5M after detail" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="portfolio-item"><img src="assets/photo-1.png" alt="SUV foam wash in driveway" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="portfolio-item"><img src="assets/porsche-911.png" alt="Porsche 911 detailed" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="portfolio-item"><img src="assets/bmw-m4-blue.png" alt="Blue BMW M4 detail" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="portfolio-item"><img src="assets/tesla-model-y.png" alt="Tesla Model Y detail" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="portfolio-item"><img src="assets/porsche-foam-wash.png" alt="Porsche foam wash" loading="lazy" onerror="handleImgError(this)"></div>
+      <div class="portfolio-item"><picture><source type="image/avif" srcset="assets/opt/porsche-detailing-truck-540.avif 540w, assets/opt/porsche-detailing-truck-810.avif 810w, assets/opt/porsche-detailing-truck-1080.avif 1080w" sizes="100vw"><source type="image/webp" srcset="assets/opt/porsche-detailing-truck-540.webp 540w, assets/opt/porsche-detailing-truck-810.webp 810w, assets/opt/porsche-detailing-truck-1080.webp 1080w" sizes="100vw"><img src="assets/opt/porsche-detailing-truck-1080.jpg" width="1080" height="1080" alt="Porsche with DFD detailing truck" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="portfolio-item"><picture><source type="image/avif" srcset="assets/opt/cadillac-escalade-detail-386.avif 386w, assets/opt/cadillac-escalade-detail-772.avif 772w" sizes="(max-width: 768px) 100vw, 33vw"><source type="image/webp" srcset="assets/opt/cadillac-escalade-detail-386.webp 386w, assets/opt/cadillac-escalade-detail-772.webp 772w" sizes="(max-width: 768px) 100vw, 33vw"><img src="assets/opt/cadillac-escalade-detail-772.jpg" width="772" height="1024" alt="Cadillac Escalade detail" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="portfolio-item"><picture><source type="image/avif" srcset="assets/opt/bmw-x5m-detail-700.avif 700w, assets/opt/bmw-x5m-detail-1400.avif 1400w" sizes="(max-width: 900px) 100vw, 50vw"><source type="image/webp" srcset="assets/opt/bmw-x5m-detail-700.webp 700w, assets/opt/bmw-x5m-detail-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/opt/bmw-x5m-detail-1400.jpg" width="1400" height="933" alt="BMW X5M after detail" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="portfolio-item"><picture><source type="image/avif" srcset="assets/opt/suv-foam-wash-driveway-330.avif 330w, assets/opt/suv-foam-wash-driveway-600.avif 600w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/suv-foam-wash-driveway-330.webp 330w, assets/opt/suv-foam-wash-driveway-600.webp 600w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/suv-foam-wash-driveway-600.jpg" width="600" height="800" alt="SUV foam wash in driveway" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="portfolio-item"><picture><source type="image/avif" srcset="assets/opt/porsche-911-ceramic-coating-540.avif 540w, assets/opt/porsche-911-ceramic-coating-1080.avif 1080w" sizes="(max-width: 900px) 100vw, 50vw"><source type="image/webp" srcset="assets/opt/porsche-911-ceramic-coating-540.webp 540w, assets/opt/porsche-911-ceramic-coating-1080.webp 1080w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/opt/porsche-911-ceramic-coating-1080.jpg" width="1080" height="1080" alt="Porsche 911 detailed" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="portfolio-item"><picture><source type="image/avif" srcset="assets/opt/blue-bmw-m4-detail-352.avif 352w, assets/opt/blue-bmw-m4-detail-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/blue-bmw-m4-detail-352.webp 352w, assets/opt/blue-bmw-m4-detail-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/blue-bmw-m4-detail-640.jpg" width="640" height="788" alt="Blue BMW M4 detail" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="portfolio-item"><picture><source type="image/avif" srcset="assets/opt/tesla-model-y-detail-352.avif 352w, assets/opt/tesla-model-y-detail-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/tesla-model-y-detail-352.webp 352w, assets/opt/tesla-model-y-detail-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/tesla-model-y-detail-640.jpg" width="640" height="640" alt="Tesla Model Y detail" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="portfolio-item"><picture><source type="image/avif" srcset="assets/opt/porsche-foam-wash-540.avif 540w, assets/opt/porsche-foam-wash-1080.avif 1080w" sizes="(max-width: 900px) 100vw, 50vw"><source type="image/webp" srcset="assets/opt/porsche-foam-wash-540.webp 540w, assets/opt/porsche-foam-wash-1080.webp 1080w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/opt/porsche-foam-wash-1080.jpg" width="1080" height="1080" alt="Porsche foam wash" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
     </div>
   </div>
 </section>

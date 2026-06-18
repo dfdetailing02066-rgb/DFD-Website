@@ -32,43 +32,77 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=26">
 <link rel="stylesheet" href="marine-styles.css?v=21">
+<link rel="preload" as="image" type="image/webp" href="assets/opt/detailed-boat-3-1400.webp" fetchpriority="high">
 <script src="images.js?v=16"></script>
 <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Boat & Marine Detailing",
-    "name": "Mobile Marine Detailing",
-    "description": "Mobile boat detailing — wash, oxidation removal, and ceramic protection at your marina or dock across the South Shore and Cape Cod.",
-    "url": "https://diamondfinishdetailing.net/marine.html",
-    "provider": {
-      "@type": "AutoWash",
-      "name": "Diamond Finish Detailing",
-      "url": "https://diamondfinishdetailing.net/",
-      "telephone": "+1-781-424-3314"
-    },
-    "areaServed": { "@type": "AdministrativeArea", "name": "Eastern Massachusetts" },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Marine Detailing Packages",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mariner's Package" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Captain's Package" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramic Package" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Maintenance Wash" } }
-      ]
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Boat & Marine Detailing",
+  "name": "Mobile Marine Detailing",
+  "description": "Mobile boat detailing — wash, oxidation removal, and ceramic protection at your marina or dock across the South Shore and Cape Cod.",
+  "url": "https://diamondfinishdetailing.net/marine",
+  "provider": { "@id": "https://diamondfinishdetailing.net/#business" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "South Shore, Massachusetts" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Marine Detailing Packages",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondfinishdetailing.net/" },
-      { "@type": "ListItem", "position": 2, "name": "Marine Detailing", "item": "https://diamondfinishdetailing.net/marine.html" }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mariner's Package" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Captain's Package" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramic Package" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Maintenance Wash" } }
     ]
   }
-]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondfinishdetailing.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Marine Detailing", "item": "https://diamondfinishdetailing.net/marine" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does marine detailing take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most jobs range from 4 to 8 hours depending on the size of the boat and the package selected. Ceramic coating applications may require a full day. We'll give you a time estimate when you book." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work at marinas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - we detail boats dockside at marinas across Eastern Massachusetts and Cape Cod. We're fully self-contained, so we bring our own water, power, and equipment. No hookups needed from the marina." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in the maintenance wash?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A full exterior pressure wash from bow to stern, wipe-down of windows and cockpit surfaces, and a spray sealant to protect the gelcoat between full details. Available weekly or bi-weekly." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I wax my boat?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We recommend a full wax at least once per season - ideally at the start. Marine wax provides about 4 months of UV and salt protection. For year-round coverage, consider our ceramic coating option." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between wax and ceramic coating?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Wax is a traditional protective layer that lasts 3-4 months and needs to be reapplied each season. Ceramic coating bonds to the gelcoat at a molecular level and lasts 2-5+ years depending on the product. Ceramic is more durable, more hydrophobic, and requires less maintenance over time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you remove heavy oxidation from my hull?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our compounding service is designed specifically for heavy oxidation. We use professional-grade marine compounds and a buffer to cut through the damaged layer and expose fresh gelcoat. Most hulls can be brought back to near-factory shine." }
+    }
+  ]
+}
 </script>
 
 <style>
@@ -95,7 +129,7 @@
 <!-- HERO -->
 <section class="hero" data-screen-label="01 Marine Hero">
   <div class="hero-bg">
-    <img src="assets/Boat%20Photos/IMG_0379.png" data-img="heroMarine" alt="Boat detailed by Diamond Finish Detailing" onerror="handleImgError(this)">
+    <img src="assets/opt/detailed-boat-3-1400.webp" width="1400" height="1867" alt="Boat detailed by Diamond Finish Detailing" fetchpriority="high" loading="eager" decoding="async" data-img="heroMarine" onerror="handleImgError(this)">
   </div>
   <div class="container hero-content">
     <div class="marine-hero-rating">
@@ -122,7 +156,7 @@
 
     <div class="ceramic-hero-grid">
       <div class="ceramic-hero-logo">
-        <img src="assets/SystemX%20logo.png" alt="SystemX Certified Installer" loading="lazy" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/systemx-logo-500.avif 500w, assets/opt/systemx-logo-1000.avif 1000w" sizes="(max-width: 1080px) 52px, 85px"><source type="image/webp" srcset="assets/opt/systemx-logo-500.webp 500w, assets/opt/systemx-logo-1000.webp 1000w" sizes="(max-width: 1080px) 52px, 85px"><img src="assets/opt/systemx-logo-1000.png" width="1000" height="333" alt="SystemX Certified Installer" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture>
         <p class="ceramic-hero-cert"><strong>Certified Installer</strong>Factory-trained to properly apply and warranty SystemX marine coatings.</p>
       </div>
       <div class="ceramic-hero-col">
@@ -294,7 +328,7 @@
         </div>
       </div>
       <div>
-        <img src="assets/Boat%20Photos/IMG_0390.png" alt="Boat docked in the water" style="width: 100%; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,0.15);" loading="lazy" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/detailed-boat-1-352.avif 352w, assets/opt/detailed-boat-1-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/detailed-boat-1-352.webp 352w, assets/opt/detailed-boat-1-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/detailed-boat-1-640.jpg" width="640" height="853" alt="Boat docked in the water" loading="lazy" decoding="async" style="width: 100%; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,0.15);" onerror="handleImgError(this)"></picture>
       </div>
     </div>
   </div>
@@ -309,28 +343,28 @@
     </div>
     <div class="marine-service-cards">
       <div class="marine-service-card">
-        <img src="assets/Boat%20Photos/Compounding.webp" alt="Boat hull being compounded" loading="lazy" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/boat-compounding-450.avif 450w, assets/opt/boat-compounding-900.avif 900w" sizes="(max-width: 768px) 100vw, 33vw"><source type="image/webp" srcset="assets/opt/boat-compounding-450.webp 450w, assets/opt/boat-compounding-900.webp 900w" sizes="(max-width: 768px) 100vw, 33vw"><img src="assets/opt/boat-compounding-900.jpg" width="900" height="450" alt="Boat hull being compounded" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture>
         <div class="card-overlay">
           <h3>Compounding</h3>
           <p>Cut away oxidation to reveal the fresh, glossy gelcoat underneath.</p>
         </div>
       </div>
       <div class="marine-service-card">
-        <img src="assets/Boat%20Photos/Wax.webp" alt="Glossy waxed boat surface" loading="lazy" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/boat-wax-450.avif 450w, assets/opt/boat-wax-900.avif 900w" sizes="(max-width: 768px) 100vw, 33vw"><source type="image/webp" srcset="assets/opt/boat-wax-450.webp 450w, assets/opt/boat-wax-900.webp 900w" sizes="(max-width: 768px) 100vw, 33vw"><img src="assets/opt/boat-wax-900.jpg" width="900" height="450" alt="Glossy waxed boat surface" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture>
         <div class="card-overlay">
           <h3>Wax</h3>
           <p>Marine wax creates a hydrophobic shield against UV damage and oxidation.</p>
         </div>
       </div>
       <div class="marine-service-card">
-        <img src="assets/Boat%20Photos/Wash.webp" alt="Boat being washed at the dock" loading="lazy" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/boat-wash-450.avif 450w, assets/opt/boat-wash-900.avif 900w" sizes="(max-width: 768px) 100vw, 33vw"><source type="image/webp" srcset="assets/opt/boat-wash-450.webp 450w, assets/opt/boat-wash-900.webp 900w" sizes="(max-width: 768px) 100vw, 33vw"><img src="assets/opt/boat-wash-900.jpg" width="900" height="450" alt="Boat being washed at the dock" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture>
         <div class="card-overlay">
           <h3>Wash</h3>
           <p>Full exterior wash from bow to stern - hull, deck, rails, and brightwork.</p>
         </div>
       </div>
       <div class="marine-service-card">
-        <img src="assets/Boat%20Photos/Metal%20Polishing.webp" alt="Polished stainless boat hardware" loading="lazy" onerror="handleImgError(this)">
+        <picture><source type="image/avif" srcset="assets/opt/boat-metal-polishing-450.avif 450w, assets/opt/boat-metal-polishing-900.avif 900w" sizes="(max-width: 768px) 100vw, 33vw"><source type="image/webp" srcset="assets/opt/boat-metal-polishing-450.webp 450w, assets/opt/boat-metal-polishing-900.webp 900w" sizes="(max-width: 768px) 100vw, 33vw"><img src="assets/opt/boat-metal-polishing-900.jpg" width="900" height="450" alt="Polished stainless boat hardware" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture>
         <div class="card-overlay">
           <h3>Metal Polishing</h3>
           <p>Restore the mirror finish on rails, trim, cleats, and fittings.</p>
@@ -388,7 +422,7 @@
     <div class="marine-faq-grid">
       <div class="marine-faq-intro">
         <div class="faq-image-container" style="margin-bottom: 32px;">
-          <img src="assets/Boat%20Photos/IMG_0381.png" alt="Boat detailing professional at work" onerror="handleImgError(this)">
+          <picture><source type="image/avif" srcset="assets/opt/detailed-boat-2-352.avif 352w, assets/opt/detailed-boat-2-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/detailed-boat-2-352.webp 352w, assets/opt/detailed-boat-2-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/detailed-boat-2-640.jpg" width="640" height="853" alt="Boat detailing professional at work" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture>
         </div>
         <span class="eyebrow">FAQs</span>
         <h3>Common questions about marine detailing.</h3>
@@ -433,14 +467,14 @@
       <h2 class="headline">Recent boats.</h2>
     </div>
     <div class="masonry-grid">
-      <div class="masonry-item"><img src="assets/Boat%20Photos/Boat%20maintenance.webp" alt="Boat maintenance detail" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="masonry-item"><img src="assets/Boat%20Photos/IMG_0162.png" alt="Detailed boat by Diamond Finish" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="masonry-item"><img src="assets/Boat%20Photos/IMG_0187.png" alt="Detailed boat by Diamond Finish" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="masonry-item"><img src="assets/Boat%20Photos/IMG_0379.png" alt="Detailed boat by Diamond Finish" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="masonry-item"><img src="assets/Boat%20Photos/IMG_0381.png" alt="Detailed boat by Diamond Finish" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="masonry-item"><img src="assets/Boat%20Photos/IMG_0385.png" alt="Detailed boat by Diamond Finish" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="masonry-item"><img src="assets/Boat%20Photos/IMG_0390.png" alt="Detailed boat by Diamond Finish" loading="lazy" onerror="handleImgError(this)"></div>
-      <div class="masonry-item"><img src="assets/Boat%20Photos/IMG_2617.png" alt="Detailed boat by Diamond Finish" loading="lazy" onerror="handleImgError(this)"></div>
+      <div class="masonry-item"><picture><source type="image/avif" srcset="assets/opt/boat-maintenance-450.avif 450w, assets/opt/boat-maintenance-900.avif 900w" sizes="(max-width: 768px) 100vw, 33vw"><source type="image/webp" srcset="assets/opt/boat-maintenance-450.webp 450w, assets/opt/boat-maintenance-900.webp 900w" sizes="(max-width: 768px) 100vw, 33vw"><img src="assets/opt/boat-maintenance-900.jpg" width="900" height="583" alt="Boat maintenance detail" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="masonry-item"><picture><source type="image/avif" srcset="assets/opt/detailed-boat-6-352.avif 352w, assets/opt/detailed-boat-6-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/detailed-boat-6-352.webp 352w, assets/opt/detailed-boat-6-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/detailed-boat-6-640.jpg" width="640" height="853" alt="Detailed boat by Diamond Finish" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="masonry-item"><picture><source type="image/avif" srcset="assets/opt/detailed-boat-5-352.avif 352w, assets/opt/detailed-boat-5-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/detailed-boat-5-352.webp 352w, assets/opt/detailed-boat-5-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/detailed-boat-5-640.jpg" width="640" height="853" alt="Detailed boat by Diamond Finish" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="masonry-item"><picture><source type="image/avif" srcset="assets/opt/detailed-boat-3-700.avif 700w, assets/opt/detailed-boat-3-1400.avif 1400w" sizes="(max-width: 900px) 100vw, 50vw"><source type="image/webp" srcset="assets/opt/detailed-boat-3-700.webp 700w, assets/opt/detailed-boat-3-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/opt/detailed-boat-3-1400.jpg" width="1400" height="1867" alt="Detailed boat by Diamond Finish" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="masonry-item"><picture><source type="image/avif" srcset="assets/opt/detailed-boat-2-352.avif 352w, assets/opt/detailed-boat-2-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/detailed-boat-2-352.webp 352w, assets/opt/detailed-boat-2-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/detailed-boat-2-640.jpg" width="640" height="853" alt="Detailed boat by Diamond Finish" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="masonry-item"><picture><source type="image/avif" srcset="assets/opt/detailed-boat-4-352.avif 352w, assets/opt/detailed-boat-4-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/detailed-boat-4-352.webp 352w, assets/opt/detailed-boat-4-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/detailed-boat-4-640.jpg" width="640" height="853" alt="Detailed boat by Diamond Finish" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="masonry-item"><picture><source type="image/avif" srcset="assets/opt/detailed-boat-1-352.avif 352w, assets/opt/detailed-boat-1-640.avif 640w" sizes="(max-width: 600px) 50vw, 25vw"><source type="image/webp" srcset="assets/opt/detailed-boat-1-352.webp 352w, assets/opt/detailed-boat-1-640.webp 640w" sizes="(max-width: 600px) 50vw, 25vw"><img src="assets/opt/detailed-boat-1-640.jpg" width="640" height="853" alt="Detailed boat by Diamond Finish" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
+      <div class="masonry-item"><picture><source type="image/avif" srcset="assets/opt/boat-detailing-scituate-450.avif 450w, assets/opt/boat-detailing-scituate-900.avif 900w" sizes="(max-width: 768px) 100vw, 33vw"><source type="image/webp" srcset="assets/opt/boat-detailing-scituate-450.webp 450w, assets/opt/boat-detailing-scituate-900.webp 900w" sizes="(max-width: 768px) 100vw, 33vw"><img src="assets/opt/boat-detailing-scituate-900.jpg" width="900" height="1200" alt="Detailed boat by Diamond Finish" loading="lazy" decoding="async" onerror="handleImgError(this)"></picture></div>
     </div>
   </div>
 </section>

@@ -33,14 +33,90 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=26">
-  <script src="images.js?v=16"></script>
+  <link rel="preload" as="image" type="image/webp" imagesrcset="assets/opt/porsche-foam-wash-540.webp 540w, assets/opt/porsche-foam-wash-1080.webp 1080w" imagesizes="(max-width: 900px) 100vw, 50vw" fetchpriority="high">
+<script src="images.js?v=16"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["AutoWash", "AutoDetailing"],
+    "@id": "https://diamondfinishdetailing.net/#business",
+    "name": "Diamond Finish Detailing",
+    "description": "Premium mobile auto and marine detailing serving Eastern Massachusetts, including ceramic coating and paint correction.",
+    "image": "https://diamondfinishdetailing.net/assets/og-image.jpg",
+    "logo": "https://diamondfinishdetailing.net/apple-touch-icon.png",
+    "url": "https://diamondfinishdetailing.net/",
+    "telephone": "+17814243314",
+    "email": "DFdetailing02066@gmail.com",
+    "priceRange": "$$",
+    "parentOrganization": { "@id": "https://diamondfinishdetailing.net/#org" },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "172 Mann Lot Rd",
+      "addressLocality": "Scituate",
+      "addressRegion": "MA",
+      "postalCode": "02066",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.2043376,
+      "longitude": -70.7815984
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "07:00",
+        "closes": "20:00"
+      }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Scituate", "addressRegion": "MA" },
+      { "@type": "City", "name": "Cohasset", "addressRegion": "MA" },
+      { "@type": "City", "name": "Norwell", "addressRegion": "MA" },
+      { "@type": "City", "name": "Hingham", "addressRegion": "MA" },
+      { "@type": "City", "name": "Pembroke", "addressRegion": "MA" },
+      { "@type": "City", "name": "Marshfield", "addressRegion": "MA" },
+      { "@type": "City", "name": "Duxbury", "addressRegion": "MA" },
+      { "@type": "City", "name": "Plymouth", "addressRegion": "MA" },
+      { "@type": "City", "name": "Kingston", "addressRegion": "MA" },
+      { "@type": "City", "name": "Sandwich", "addressRegion": "MA" },
+      { "@type": "City", "name": "Falmouth", "addressRegion": "MA" },
+      { "@type": "City", "name": "Weymouth", "addressRegion": "MA" },
+      { "@type": "City", "name": "Braintree", "addressRegion": "MA" },
+      { "@type": "City", "name": "Quincy", "addressRegion": "MA" },
+      { "@type": "City", "name": "Boston", "addressRegion": "MA" },
+      { "@type": "City", "name": "Brookline", "addressRegion": "MA" },
+      { "@type": "City", "name": "Cambridge", "addressRegion": "MA" },
+      { "@type": "City", "name": "Newton", "addressRegion": "MA" },
+      { "@type": "City", "name": "Wellesley", "addressRegion": "MA" },
+      { "@type": "City", "name": "Needham", "addressRegion": "MA" },
+      { "@type": "City", "name": "Natick", "addressRegion": "MA" },
+      { "@type": "AdministrativeArea", "name": "South Shore, Massachusetts" },
+      { "@type": "AdministrativeArea", "name": "Greater Boston" },
+      { "@type": "AdministrativeArea", "name": "MetroWest, Massachusetts" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100095299370986",
+      "https://www.instagram.com/_diamondfinishdetailing/",
+      "https://www.tiktok.com/@diamond.finish",
+      "https://www.youtube.com/channel/UCwE9VgDtsYSZa-3rE3DnYiQ",
+      "https://www.yelp.com/biz/diamond-finish-detailing-scituate"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "140"
+    }
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondfinishdetailing.net/" },
-      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://diamondfinishdetailing.net/contact.html" }
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://diamondfinishdetailing.net/contact" }
     ]
   }
   </script>
@@ -70,8 +146,7 @@
   <!-- HERO -->
   <section class="hero hero-blue" data-screen-label="01 Contact Hero">
     <div class="hero-bg">
-      <img src="assets/porsche-foam-wash.png" alt="Porsche being foam-washed by Diamond Finish Detailing"
-        onerror="handleImgError(this)">
+      <picture><source type="image/avif" srcset="assets/opt/porsche-foam-wash-540.avif 540w, assets/opt/porsche-foam-wash-1080.avif 1080w" sizes="(max-width: 900px) 100vw, 50vw"><source type="image/webp" srcset="assets/opt/porsche-foam-wash-540.webp 540w, assets/opt/porsche-foam-wash-1080.webp 1080w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/opt/porsche-foam-wash-1080.jpg" width="1080" height="1080" alt="Porsche being foam-washed by Diamond Finish Detailing" fetchpriority="high" loading="eager" decoding="async" onerror="handleImgError(this)"></picture>
     </div>
     <div class="container hero-content">
       <span class="eyebrow">Contact</span>
@@ -102,7 +177,7 @@
             </div>
             <div style="border-top: 1px solid var(--border); padding-top: 24px;">
               <span class="eyebrow">Hours</span>
-              <p style="font-size: 20px; font-weight: 600; margin-top: 8px;">Everyday · 7am - 9pm</p>
+              <p style="font-size: 20px; font-weight: 600; margin-top: 8px;">Everyday · 7am - 8pm</p>
             </div>
             <div style="border-top: 1px solid var(--border); padding-top: 24px;">
               <span class="eyebrow">Service Area</span>
