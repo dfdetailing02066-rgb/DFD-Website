@@ -1,0 +1,220 @@
+w
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Diamond Finish Detailing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=19">
+  <script src="images.js?v=16"></script>
+</head>
+
+<body>
+
+
+  <div class="promo-strip">
+    <span class="stars">★★★★★</span>
+    130+ 5-Star Reviews · Trusted by 1,000+ drivers · Eastern Massachusetts · Licensed, Insured &amp; SystemX Certified
+  </div>
+
+  <div id="site-header"></div>
+
+  <!-- HERO -->
+  <section class="hero hero-blue" data-screen-label="01 Contact Hero">
+    <div class="hero-bg">
+      <img src="assets/porsche-foam-wash.png" alt="Porsche being foam-washed by Diamond Finish Detailing"
+        onerror="handleImgError(this)">
+    </div>
+    <div class="container hero-content">
+      <span class="eyebrow">Contact</span>
+      <h1 class="display">Get in touch.</h1>
+      <p class="body-lg">Serving the South Shore, Cape Cod, Greater Boston, and MetroWest.</p>
+    </div>
+  </section>
+
+  <!-- INTRO + FORM -->
+  <section class="section" data-screen-label="02 Quote Form">
+    <div class="container">
+      <div class="grid-2" style="grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start;">
+        <div>
+          <p class="body-lg" style="margin-bottom: 48px;">Have a question, want a custom quote, or trying to figure out
+            which package is right for you? Give us a call, send an email, or fill out the quote form - we typically
+            respond in 30 minutes or less.</p>
+
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <div style="border-top: 1px solid var(--border); padding-top: 24px;">
+              <span class="eyebrow">Phone</span>
+              <a href="tel:7814243314" style="font-size: 28px; font-weight: 700; display: block; margin-top: 8px;">(781)
+                424-3314</a>
+            </div>
+            <div style="border-top: 1px solid var(--border); padding-top: 24px;">
+              <span class="eyebrow">Email</span>
+              <a href="mailto:DFdetailing02066@gmail.com"
+                style="font-size: 20px; font-weight: 600; display: block; margin-top: 8px; word-break: break-all;">DFdetailing02066@gmail.com</a>
+            </div>
+            <div style="border-top: 1px solid var(--border); padding-top: 24px;">
+              <span class="eyebrow">Hours</span>
+              <p style="font-size: 20px; font-weight: 600; margin-top: 8px;">Everyday · 7am - 9pm</p>
+            </div>
+            <div style="border-top: 1px solid var(--border); padding-top: 24px;">
+              <span class="eyebrow">Service Area</span>
+              <p style="font-size: 20px; font-weight: 600; margin-top: 8px;">Eastern Massachusetts</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="quoteForm" class="form-card">
+          <!-- Hidden Web3Forms configurations -->
+          <input type="hidden" name="access_key" value="2b7f98f5-23b2-457d-8955-fc019d7e87ea">
+          <!-- Optional: Customize Subject Line of the email -->
+          <input type="hidden" name="subject" value="New Quote Request from Diamond Finish Detailing">
+          <!-- Optional: From Name -->
+          <input type="hidden" name="from_name" value="Diamond Finish Detailing Website">
+          <!-- Optional: Redirect to a custom thank you page (disabled here since we use AJAX) -->
+          <input type="hidden" name="redirect" value="">
+
+          <span class="eyebrow">Quote Request</span>
+          <h2 class="headline" style="font-size: 32px; margin-bottom: 32px; margin-top: 8px;">Tell us about your <span
+              style="color: var(--accent);">vehicle</span>.</h2>
+
+          <!-- Form Fields Container -->
+          <div id="formFields" class="form-row">
+            <div class="form-grid-2">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Full name" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-grid-2">
+              <div class="field">
+                <label for="vehicle">Vehicle / Boat</label>
+                <input id="vehicle" name="vehicle" type="text" placeholder="Make / Model / Year" required>
+              </div>
+              <div class="field">
+                <label for="town">Town / ZIP</label>
+                <input id="town" name="town" type="text" placeholder="Scituate, MA" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option>Auto - Interior Detail</option>
+                <option>Auto - Full Detail</option>
+                <option>Auto - Diamond Detail</option>
+                <option>Marine - Mariner's Package</option>
+                <option>Marine - Captain's Package</option>
+                <option>Marine - Ceramic Package</option>
+                <option>Marine - Maintenance Wash</option>
+                <option>Ceramic Coating - Crystal+ (2yr)</option>
+                <option>Ceramic Coating - Pro+ (6yr)</option>
+                <option>Ceramic Coating - Max G+ (10yr)</option>
+                <option>Not sure - please advise</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="notes">Anything else we should know</label>
+              <textarea id="notes" name="notes"
+                placeholder="Stains, odors, pet hair, special requests, preferred times…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit Quote Request <span
+                class="arrow">→</span></button>
+            <div style="display: flex; gap: 12px; margin-top: 8px;">
+              <a href="tel:7814243314" class="btn btn-secondary btn-full">Call (781) 424-3314</a>
+            </div>
+          </div>
+
+          <!-- Form Success Container -->
+          <div id="formSuccess"
+            style="display: none; text-align: center; padding: 48px 24px; animation: fadeIn 0.4s ease-out;">
+            <div style="font-size: 64px; margin-bottom: 24px; color: var(--accent); line-height: 1;">✓</div>
+            <h3 class="headline" style="font-size: 28px; margin-bottom: 16px; color: #fff;">Request Sent!</h3>
+            <p class="body" style="color: var(--text-muted); margin-bottom: 32px; font-size: 16px; line-height: 1.6;">
+              Thank you for reaching out. We have received your details and will get back to you within 30 minutes.
+            </p>
+            <a href="index.html" class="btn btn-primary" style="display: inline-block;">Return Home</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHT STRIP -->
+  <section class="section-sm" data-screen-label="03 Strip CTA">
+    <div class="container">
+      <div class="light-strip">
+        <h3>Same-day appointments often available. Just call.</h3>
+        <a href="tel:7814243314" class="btn btn-primary">Call Now <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="shared.js?v=9"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("quoteForm");
+      const formFields = document.getElementById("formFields");
+      const formSuccess = document.getElementById("formSuccess");
+      const submitBtn = form.querySelector('button[type="submit"]');
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // 1. Check if the access key is still the placeholder
+        const accessKeyInput = form.querySelector('input[name="access_key"]');
+        if (accessKeyInput.value === "YOUR_WEB3FORMS_ACCESS_KEY_HERE") {
+          alert("Setup Step Needed:\n\nPlease edit contact.html and replace 'YOUR_WEB3FORMS_ACCESS_KEY_HERE' with your real Web3Forms Access Key to receive emails.");
+          return;
+        }
+
+        // 2. Visual loading state
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending... <span class="spinner"></span>';
+
+        // 3. Serialize and send data
+        const formData = new FormData(form);
+
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        })
+          .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              // Success: Hide fields, show success card
+              formFields.style.display = "none";
+              formSuccess.style.display = "block";
+            } else {
+              console.log(response);
+              alert(json.message || "Something went wrong. Please try again or call us.");
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalBtnText;
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            alert("Something went wrong. Please check your connection or call us.");
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+          });
+      });
+    });
+  </script>
+</body>
+
+</html>

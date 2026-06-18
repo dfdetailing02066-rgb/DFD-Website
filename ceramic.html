@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ceramic Coating - Diamond Finish Detailing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=19">
+<script src="images.js?v=16"></script>
+<style>
+  .benefits-grid {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  @media (min-width: 1024px) {
+    .benefits-grid { grid-template-columns: repeat(4, 1fr); margin-bottom: 64px; }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .benefits-grid { grid-template-columns: repeat(2, 1fr); margin-bottom: 48px; }
+  }
+  @media (max-width: 767px) {
+    .benefits-grid { grid-template-columns: 1fr; margin-bottom: 32px; }
+  }
+  .benefit-card {
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-icon-circle {
+    width: 80px;
+    height: 80px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+  @media (max-width: 767px) {
+    .benefit-icon-circle { width: 64px; height: 64px; }
+  }
+</style>
+</head>
+<body>
+
+
+<div class="promo-strip">
+  <span class="stars">★★★★★</span>
+  130+ 5-Star Reviews · Trusted by 1,000+ drivers · Eastern Massachusetts · Licensed, Insured &amp; SystemX Certified
+</div>
+
+<div id="site-header"></div>
+
+<!-- HERO -->
+<section class="hero" data-screen-label="01 Ceramic Hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1600&q=80&auto=format&fit=crop" data-img="heroCeramic" alt="Water beading on ceramic-coated black paint" onerror="handleImgError(this)">
+  </div>
+  <div class="container hero-content">
+    <div class="marine-hero-rating" style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 14px; font-weight: 600; background: rgba(0,0,0,0.5); padding: 8px 16px; border-radius: 100px; width: fit-content;">
+      <span class="stars" style="color: var(--accent);">★★★★★</span>
+      <span style="color: #fff;">5.0 · 130+ Reviews on Google</span>
+    </div>
+    <span class="eyebrow" style="color: #00d4ff; text-shadow: 0 2px 8px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: 2px;">Get a Smooth, Hydrophobic Exterior Surface</span>
+    <h1 class="display" style="text-shadow: 0 4px 12px rgba(0,0,0,0.5);">Massachusetts' #1 installer of ceramic coatings</h1>
+    <p class="body-lg" style="text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Protect your vehicle and elevate its look with Diamond Finish Detailing. As a SystemX Certified Installer, we apply factory-backed coatings that deliver lasting protection and a brilliant finish for years to come.</p>
+    <div class="btn-row">
+      <a href="tel:7814243314" class="btn btn-primary">Call Us <span class="arrow">→</span></a>
+      <a href="contact.html" class="btn btn-secondary">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- SHARED INTRO (White Background) -->
+<section data-screen-label="02 Shared Intro" style="background-color: #fff; color: #000; padding: 48px 0;">
+  <div class="container">
+    <div class="grid-3" style="grid-template-columns: 1fr 1.2fr 1fr; gap: 48px; align-items: center;">
+      <!-- Image Column -->
+      <div>
+        <img src="assets/porsche-911.png" alt="Glossy Porsche 911" loading="lazy" style="width: 100%; height: 360px; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);" onerror="handleImgError(this)">
+      </div>
+      
+      <!-- Content Column -->
+      <div>
+        <span class="eyebrow" style="color: var(--accent); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 8px;">THE DIAMOND EFFECT</span>
+        <h2 class="display" style="color: #000; font-size: 2.25rem; margin-bottom: 20px; line-height: 1.1;">Beyond traditional wax.</h2>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div>
+            <h4 style="font-size: 17px; margin-bottom: 6px; font-weight: 700;">What Is It?</h4>
+            <p style="color: #444; font-size: 15px; line-height: 1.5;">A liquid polymer that molecularly bonds to paint or gel coat, creating a hard, hydrophobic shell that won't wash away.</p>
+          </div>
+          <div>
+            <h4 style="font-size: 17px; margin-bottom: 6px; font-weight: 700;">The Benefits</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.4;">
+              <li style="padding-left: 20px; position: relative; color: #444;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span>Extreme water beading</li>
+              <li style="padding-left: 20px; position: relative; color: #444;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span>Blocks UV & oxidation</li>
+              <li style="padding-left: 20px; position: relative; color: #444;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span>Effortless washes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SystemX Quality Column -->
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; border-left: 1px solid #eee; padding-left: 32px;">
+        <img src="assets/SystemX%20logo.png" alt="SystemX Ceramic Protection" style="height: 130px; width: auto; object-fit: contain;">
+        <p style="color: #666; font-size: 14px; line-height: 1.5; font-weight: 500; margin: 0;">
+          Certified SystemX installer. Manufacturer-backed warranties—up to 10 years for vehicles, 5 for boats.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- AUTOMOTIVE SECTION                         -->
+<!-- ========================================== -->
+
+<!-- AUTO PACKAGES (Black Background) -->
+<section data-screen-label="03 Auto Packages" style="background-color: #000; color: #fff; padding: 48px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+  <div class="container">
+    <div class="section-head center" style="margin-bottom: 24px;">
+      <span class="eyebrow" style="color: var(--accent); margin-bottom: 4px; display: block;">Automotive Coatings</span>
+      <h2 class="display" style="color: #fff; font-size: 2.25rem; margin-bottom: 12px;">Auto Packages</h2>
+    </div>
+
+    <!-- NEW: AUTO-SPECIFIC BENEFITS -->
+    <div style="text-align: center; margin-bottom: 48px;">
+      <span style="color: var(--accent); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 8px;">WHY AUTO OWNERS CHOOSE CERAMIC</span>
+      <h2 style="color: #fff; font-size: 2.25rem; font-weight: 700; line-height: 1.15; margin-bottom: 12px;">Built for the road ahead.</h2>
+      <p style="max-width: 640px; margin: 0 auto; color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.5;">From daily commute grime to acid rain etching, your car's paint takes a beating. Here's how SystemX defends it.</p>
+    </div>
+
+    <div class="benefits-grid">
+      <!-- Card 1: Bird -->
+      <div class="benefit-card" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03);">
+        <div class="benefit-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L10 7"/><path d="m20 7 2 .5-2 .5"/><path d="M10 7c0 3.31-2.69 6-6 6h-.1"/></svg>
+        </div>
+        <h3 style="color: #fff; font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Bird Drop & Tree Sap Defense</h3>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.5; margin: 0;">Acidic contaminants etch unprotected clear coat in hours. SystemX creates a chemical barrier that lets you wipe them off without damage.</p>
+      </div>
+
+      <!-- Card 2: Wind -->
+      <div class="benefit-card" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03);">
+        <div class="benefit-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
+        </div>
+        <h3 style="color: #fff; font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Road Grime & Brake Dust</h3>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.5; margin: 0;">Daily driving coats your paint and wheels in iron particles and tar. Hydrophobic surface means contaminants rinse off instead of bonding.</p>
+      </div>
+
+      <!-- Card 3: ShieldAlert -->
+      <div class="benefit-card" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03);">
+        <div class="benefit-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        </div>
+        <h3 style="color: #fff; font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Swirl & Wash Mark Resistant</h3>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.5; margin: 0;">9H ceramic hardness — harder than your factory clear coat. Resists the micro-scratches that drive-thru washes and improper drying leave behind.</p>
+      </div>
+
+      <!-- Card 4: TrendingUp -->
+      <div class="benefit-card" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03);">
+        <div class="benefit-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3 style="color: #fff; font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Preserves Resale Value</h3>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.5; margin: 0;">A factory-fresh finish at trade-in time. SystemX coatings register with Carfax and are backed by manufacturer warranties up to 10 years.</p>
+      </div>
+    </div>
+
+    <!-- Horizontal Cards -->
+    <!-- Horizontal Cards -->
+    <div class="grid-3" style="margin-bottom: 32px; gap: 24px;">
+      
+      <!-- Tier 1 -->
+      <div class="pricing-card" style="padding: 32px 28px; background: #fff; border: 1px solid rgba(0,0,0,0.15); border-radius: 24px; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <span style="color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;">TIER 01 · ENTRY</span>
+        <h3 style="font-size: 24px; font-weight: 800; color: #000; margin-bottom: 2px;">Crystal+</h3>
+        <div style="font-size: 42px; font-weight: 800; color: var(--accent); margin-bottom: 12px; line-height: 1;">2 Year</div>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 16px 0;">
+        <p style="font-size: 15px; font-style: italic; color: #555; line-height: 1.4; margin-bottom: 16px;">Best for: newer vehicles wanting better protection than wax.</p>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 20px 0;">
+        <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 8px;">
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> 1-Step Polish</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> Removes 50% of swirls</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> SystemX Crystal+ application</li>
+        </ul>
+        <a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top: auto; text-align: center; width: 100%; border-radius: 8px; padding: 14px; font-weight: 800; color: #000; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">BOOK NOW <span style="font-size: 18px; line-height: 1; vertical-align: middle;">&rarr;</span></a>
+      </div>
+      
+      <!-- Tier 2 -->
+      <div class="pricing-card" style="padding: 32px 28px; background: #fff; border: 1px solid rgba(0,0,0,0.15); border-radius: 24px; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transform: scale(1.02); z-index: 2;">
+        <span style="color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;">TIER 02 · MOST POPULAR</span>
+        <h3 style="font-size: 24px; font-weight: 800; color: #000; margin-bottom: 2px;">Pro+</h3>
+        <div style="font-size: 42px; font-weight: 800; color: var(--accent); margin-bottom: 12px; line-height: 1;">6 Year</div>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 16px 0;">
+        <p style="font-size: 15px; font-style: italic; color: #555; line-height: 1.4; margin-bottom: 16px;">Best for: daily drivers wanting serious long-term protection.</p>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 20px 0;">
+        <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 8px;">
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> Full 2-Step Polish</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> Removes 70% of swirls</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> SystemX Pro+ application</li>
+        </ul>
+        <a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top: auto; text-align: center; width: 100%; border-radius: 8px; padding: 14px; font-weight: 800; color: #000; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">BOOK NOW <span style="font-size: 18px; line-height: 1; vertical-align: middle;">&rarr;</span></a>
+      </div>
+      
+      <!-- Tier 3 -->
+      <div class="pricing-card" style="padding: 32px 28px; background: #fff; border: 1px solid rgba(0,0,0,0.15); border-radius: 24px; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <span style="color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;">TIER 03 · FLAGSHIP</span>
+        <h3 style="font-size: 24px; font-weight: 800; color: #000; margin-bottom: 2px;">Max G+</h3>
+        <div style="font-size: 42px; font-weight: 800; color: var(--accent); margin-bottom: 12px; line-height: 1;">10+ Year</div>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 16px 0;">
+        <p style="font-size: 15px; font-style: italic; color: #555; line-height: 1.4; margin-bottom: 16px;">Best for: exotics and owners wanting ultimate preservation.</p>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 20px 0;">
+        <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 8px;">
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> Ultimate 3-Step Polish</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> Removes 95% of swirls</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> SystemX Max G+ (4x thicker)</li>
+        </ul>
+        <a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top: auto; text-align: center; width: 100%; border-radius: 8px; padding: 14px; font-weight: 800; color: #000; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">BOOK NOW <span style="font-size: 18px; line-height: 1; vertical-align: middle;">&rarr;</span></a>
+      </div>
+    </div>
+    
+
+
+    <!-- Horizontal Auto Add-Ons -->
+    <div class="grid-3" style="background: #fff; border-radius: 12px; padding: 12px 16px; text-align: left; gap: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <div style="padding-left: 12px; border-left: 2px solid var(--accent);">
+        <strong style="color: #000; display: block; font-size: 14px; margin-bottom: 2px;">Wheel+ Coating</strong>
+        <span style="color: #555; font-size: 13px; line-height: 1.3; display: block;">High-temp ceramic for wheels.</span>
+      </div>
+      <div style="padding-left: 12px; border-left: 2px solid var(--accent);">
+        <strong style="color: #000; display: block; font-size: 14px; margin-bottom: 2px;">Glass+ Coating</strong>
+        <span style="color: #555; font-size: 13px; line-height: 1.3; display: block;">2-year coating for exterior glass.</span>
+      </div>
+      <div style="padding-left: 12px; border-left: 2px solid var(--accent);">
+        <strong style="color: #000; display: block; font-size: 14px; margin-bottom: 2px;">Interior Protection</strong>
+        <span style="color: #555; font-size: 13px; line-height: 1.3; display: block;">Spill defense for leather/fabric.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- MARINE SECTION                             -->
+<!-- ========================================== -->
+
+<!-- MARINE PACKAGES (White Background) -->
+<section data-screen-label="04 Marine Packages" style="background-color: #fcfcfc; color: #000; padding: 48px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+  <div class="container">
+    <div class="section-head center" style="margin-bottom: 24px;">
+      <span class="eyebrow" style="color: var(--accent); margin-bottom: 4px; display: block;">Marine Coatings</span>
+      <h2 class="display" style="color: #000; font-size: 2.25rem; margin-bottom: 12px;">Marine Packages</h2>
+    </div>
+
+    <!-- NEW: MARINE-SPECIFIC BENEFITS -->
+    <div style="text-align: center; margin-bottom: 48px;">
+      <span style="color: var(--accent); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 8px;">WHY BOAT OWNERS CHOOSE CERAMIC</span>
+      <h2 style="color: #000; font-size: 2.25rem; font-weight: 700; line-height: 1.15; margin-bottom: 12px;">Built for the harshest environment on earth.</h2>
+      <p style="max-width: 640px; margin: 0 auto; color: rgba(0,0,0,0.6); font-size: 1rem; line-height: 1.5;">Saltwater is more corrosive than anything your car will ever face. SystemX marine coatings are engineered for it.</p>
+    </div>
+
+    <div class="benefits-grid">
+      <!-- Card 1: Waves -->
+      <div class="benefit-card" style="border: 1px solid rgba(0,0,0,0.05); background: #fff;">
+        <div class="benefit-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C5.8 7 7 5.5 8.5 5.5c1.5 0 2.7 1.5 4 1.5 1.3 0 2.5-1.5 4-1.5 1.5 0 2.7 1.5 4 1.5 1.3 0 2.5-1.5 2.5-1.5"/><path d="M2 12c.6.5 1.2 1 2.5 1 1.3 0 2.5-1.5 4-1.5 1.5 0 2.7 1.5 4 1.5 1.3 0 2.5-1.5 4-1.5 1.5 0 2.7 1.5 4 1.5 1.3 0 2.5-1.5 2.5-1.5"/><path d="M2 18c.6.5 1.2 1 2.5 1 1.3 0 2.5-1.5 4-1.5 1.5 0 2.7 1.5 4 1.5 1.3 0 2.5-1.5 4-1.5 1.5 0 2.7 1.5 4 1.5 1.3 0 2.5-1.5 2.5-1.5"/></svg>
+        </div>
+        <h3 style="color: #000; font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Saltwater Corrosion Resistance</h3>
+        <p style="color: rgba(0,0,0,0.6); font-size: 0.95rem; line-height: 1.5; margin: 0;">Salt destroys unprotected gelcoat and metal in weeks. SystemX bonds molecularly to gelcoat, blocking salt crystallization and corrosion.</p>
+      </div>
+
+      <!-- Card 2: Sun -->
+      <div class="benefit-card" style="border: 1px solid rgba(0,0,0,0.05); background: #fff;">
+        <div class="benefit-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </div>
+        <h3 style="color: #000; font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Stops Gelcoat Oxidation</h3>
+        <p style="color: rgba(0,0,0,0.6); font-size: 0.95rem; line-height: 1.5; margin: 0;">Once gelcoat goes chalky and yellow, the damage is permanent without aggressive compounding. SystemX prevents oxidation before it starts.</p>
+      </div>
+
+      <!-- Card 3: Sprout -->
+      <div class="benefit-card" style="border: 1px solid rgba(0,0,0,0.05); background: #fff;">
+        <div class="benefit-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 2.4 2.5 4.5 2.5 1.2 0 2.1-.3 3-.8V15c0 3-2 5-5 5"/></svg>
+        </div>
+        <h3 style="color: #000; font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Repels Algae & Slime</h3>
+        <p style="color: rgba(0,0,0,0.6); font-size: 0.95rem; line-height: 1.5; margin: 0;">Hydrophobic surface prevents marine growth, scum, and waterline staining from bonding to the hull. Quick rinse-down replaces hours of scrubbing.</p>
+      </div>
+
+      <!-- Card 4: Fuel -->
+      <div class="benefit-card" style="border: 1px solid rgba(0,0,0,0.05); background: #fff;">
+        <div class="benefit-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h12"/><path d="M4 9h10"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/></svg>
+        </div>
+        <h3 style="color: #000; font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Fuel, Exhaust & Solvent Defense</h3>
+        <p style="color: rgba(0,0,0,0.6); font-size: 0.95rem; line-height: 1.5; margin: 0;">Resists fuel spills, exhaust soot, and harsh marine cleaners that strip wax in days. Backed by SystemX's 5-year marine warranty.</p>
+      </div>
+    </div>
+
+    <!-- Horizontal Cards -->
+    <!-- Horizontal Cards -->
+    <div class="grid-2" style="max-width: 1000px; margin: 0 auto 32px auto; gap: 32px;">
+      <!-- Tier 1 -->
+      <div class="pricing-card" style="padding: 32px 28px; background: #fff; border: 1px solid rgba(0,0,0,0.15); border-radius: 24px; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <span style="color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;">TIER 01 · MARINE</span>
+        <h3 style="font-size: 24px; font-weight: 800; color: #000; margin-bottom: 2px;">Max G+</h3>
+        <div style="font-size: 42px; font-weight: 800; color: var(--accent); margin-bottom: 12px; line-height: 1;">5 Year</div>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 16px 0;">
+        <p style="font-size: 15px; font-style: italic; color: #555; line-height: 1.4; margin-bottom: 16px;">Best for: pleasure boats, wakeboats, and cruisers.</p>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 20px 0;">
+        <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 8px;">
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> 2 layers of SystemX Max G+ on gel coat</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> 2 layers on metal trim & fittings</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> 5-year manufacturer warranty</li>
+        </ul>
+        <a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top: auto; text-align: center; width: 100%; border-radius: 8px; padding: 14px; font-weight: 800; color: #000; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">BOOK NOW <span style="font-size: 18px; line-height: 1; vertical-align: middle;">&rarr;</span></a>
+      </div>
+      
+      <!-- Tier 2 -->
+      <div class="pricing-card" style="padding: 32px 28px; background: #fff; border: 1px solid rgba(0,0,0,0.15); border-radius: 24px; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <span style="color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;">TIER 02 · HEAVY DUTY</span>
+        <h3 style="font-size: 24px; font-weight: 800; color: #000; margin-bottom: 2px;">Xtreme SS</h3>
+        <div style="font-size: 42px; font-weight: 800; color: var(--accent); margin-bottom: 12px; line-height: 1;">5 Year</div>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 16px 0;">
+        <p style="font-size: 15px; font-style: italic; color: #555; line-height: 1.4; margin-bottom: 16px;">Best for: offshore rigs living in harshest conditions.</p>
+        <hr style="border: none; border-top: 1px solid #eee; margin: 0 0 20px 0;">
+        <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 8px;">
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> 2 layers of SystemX Xtreme Super Slick</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> Toughest formula against friction & heat</li>
+          <li style="position: relative; padding-left: 24px; font-size: 16px; color: #000; line-height: 1.4;"><span style="position: absolute; left: 0; color: var(--accent); font-weight: 900;">✓</span> 5-year manufacturer warranty</li>
+        </ul>
+        <a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top: auto; text-align: center; width: 100%; border-radius: 8px; padding: 14px; font-weight: 800; color: #000; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">BOOK NOW <span style="font-size: 18px; line-height: 1; vertical-align: middle;">&rarr;</span></a>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- OUR PROCESS & FAQS                         -->
+<!-- ========================================== -->
+
+
+
+
+
+<!-- FAQS (Black Background) -->
+<section data-screen-label="07 FAQs" style="background-color: #000; color: #fff; padding: 64px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+  <div class="container">
+    <div class="grid-2" style="align-items: center; gap: 48px;">
+      <!-- Left Column: Content & Accordions -->
+      <div>
+        <span class="eyebrow" style="color: var(--accent); margin-bottom: 8px; display: block; letter-spacing: 2px;">FAQ</span>
+        <h2 class="display" style="color: #fff; font-size: 2.5rem; margin-bottom: 16px;">Ceramic Coating FAQ's</h2>
+        
+        <div style="border-left: 3px solid var(--accent); padding-left: 16px; margin-bottom: 32px;">
+          <p style="color: rgba(255,255,255,0.8); font-size: 15px; line-height: 1.5; margin: 0;">
+            Whether you're new to detailing or had your vehicle detailed before, these are some of the common questions you might have before booking a ceramic coating detail. Please do not hesitate to contact us for further information.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="background: var(--accent); padding: 16px 20px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 800; color: #000; font-size: 15px;">
+            <span>How long does it actually last?</span>
+            <span style="font-size: 20px;">+</span>
+          </div>
+          <div style="background: var(--accent); padding: 16px 20px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 800; color: #000; font-size: 15px;">
+            <span>Will it prevent rock chips or scratches?</span>
+            <span style="font-size: 20px;">+</span>
+          </div>
+          <div style="background: var(--accent); padding: 16px 20px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 800; color: #000; font-size: 15px;">
+            <span>Can I still use drive-thru car washes?</span>
+            <span style="font-size: 20px;">+</span>
+          </div>
+          <div style="background: var(--accent); padding: 16px 20px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 800; color: #000; font-size: 15px;">
+            <span>How long does the installation take?</span>
+            <span style="font-size: 20px;">+</span>
+          </div>
+          <div style="background: var(--accent); padding: 16px 20px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 800; color: #000; font-size: 15px;">
+            <span>Do I still need to wax my car?</span>
+            <span style="font-size: 20px;">+</span>
+          </div>
+          <div style="background: var(--accent); padding: 16px 20px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 800; color: #000; font-size: 15px;">
+            <span>How do you maintain a ceramic coating?</span>
+            <span style="font-size: 20px;">+</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Tall Image -->
+      <div style="height: 100%;">
+        <img src="assets/porsche-911.png" alt="Ceramic Coated Vehicle" loading="lazy" style="width: 100%; height: 100%; min-height: 500px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" onerror="handleImgError(this)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHT STRIP (White Background to Alternate) -->
+<section style="background-color: #fcfcfc; padding: 32px 0;" data-screen-label="08 Quote Strip">
+  <div class="container">
+    <div class="light-strip" style="background: rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); margin: 0; padding: 24px; border-radius: 12px;">
+      <h3 style="color: #000; margin: 0;">Get a free quote. We'll get back within 30 minutes.</h3>
+      <a href="contact.html" class="btn btn-primary" style="margin: 0;">Request a Quote <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="closing-cta" data-screen-label="08 Ceramic CTA">
+  <div class="container">
+    <h2 class="display">Lock in showroom shine for years to come.</h2>
+    <p class="body-lg" style="color: #fff;">Book your appointment today and enjoy a vehicle or vessel that looks and feels incredible for years to come.</p>
+    <div class="btn-row">
+      <a href="contact.html" class="btn btn-primary">Request a Quote <span class="arrow">→</span></a>
+      <a href="tel:7814243314" class="btn btn-secondary">Call (781) 424-3314</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="shared.js?v=9"></script>
+</body>
+</html>
