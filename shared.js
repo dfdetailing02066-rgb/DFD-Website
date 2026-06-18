@@ -70,11 +70,10 @@
       <div>
         <h4>Follow</h4>
         <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">TikTok</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="#">Google Reviews</a></li>
+          <li><a href="https://www.facebook.com/p/Diamond-Finish-Detailing-100095299370986/" target="_blank" rel="noopener noreferrer" aria-label="Diamond Finish Detailing on Facebook">Facebook</a></li>
+          <li><a href="https://www.instagram.com/_diamondfinishdetailing/" target="_blank" rel="noopener noreferrer" aria-label="Diamond Finish Detailing on Instagram">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@diamond.finish" target="_blank" rel="noopener noreferrer" aria-label="Diamond Finish Detailing on TikTok">TikTok</a></li>
+          <li><a href="https://g.page/r/CdeOcBGo1Tm4EAE/review" target="_blank" rel="noopener noreferrer" aria-label="Diamond Finish Detailing Google Reviews">Google Reviews</a></li>
         </ul>
       </div>
     </div>
