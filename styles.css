@@ -191,9 +191,85 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 600;
   color: var(--text-primary);
 }
+
+/* Mobile menu wrapper is invisible on desktop (children flow into .nav flexbox) */
+.nav-menu { display: contents; }
+.nav-toggle { display: none; }
+
 @media (max-width: 1080px) {
-  .nav-links { display: none; }
-  .nav-phone { display: none; }
+  .nav { height: 72px; }
+  .logo-img { height: 52px; }
+
+  /* Hamburger button */
+  .nav-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 11px 9px;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform var(--dur-fast) var(--ease), opacity var(--dur-fast) var(--ease);
+  }
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Slide-down menu panel */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #000;
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0 20px;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+  }
+  .nav-menu.open { display: flex; }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    align-items: stretch;
+  }
+  .nav-links li { width: 100%; }
+  .nav-links a {
+    display: block;
+    padding: 16px var(--container-px);
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-cta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    padding: 16px var(--container-px) 0;
+  }
+  .nav-phone {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px 0;
+  }
+  .nav-cta .btn { width: 100%; justify-content: center; }
 }
 
 /* ─── Sections ─── */
@@ -1332,4 +1408,48 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* ============ Mobile hardening (phones / small tablets) ============ */
+@media (max-width: 768px) {
+  /* Never allow sideways scroll on small screens */
+  html, body { overflow-x: hidden; }
+
+  /* Promo strip scrolls away; header sticks to the very top (avoids overlap
+     when the strip text wraps to multiple lines on narrow screens) */
+  .promo-strip { position: static; font-size: 12px; line-height: 1.4; }
+  .site-header { top: 0; }
+
+  /* Collapse layouts whose inline grid-template-columns beat the class media
+     queries. !important is required to override the element's inline style. */
+  .grid-2, .grid-3 { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .stat-tiles { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+  .m-stack { grid-template-columns: 1fr !important; }
+
+  /* Tighter vertical rhythm so sections aren't enormous on a phone */
+  .section { padding: 48px 0; }
+  .section-tight, .section-sm { padding: 36px 0; }
+  .closing-cta { padding: 56px 0; }
+
+  /* Hero fits the viewport better and text isn't crammed against edges */
+  .hero { min-height: 440px; }
+  .hero-content { padding: 40px 0; max-width: 100%; }
+  .hero-split { padding: 48px 0; }
+
+  /* Full-width, easy-to-tap primary actions */
+  .hero .btn-row, .closing-cta .btn-row { width: 100%; }
+  .hero .btn-row .btn, .closing-cta .btn-row .btn { flex: 1 1 100%; justify-content: center; }
+
+  /* Forms breathe a little less padding */
+  .form-card { padding: 24px 20px; }
+
+  /* Light strip / booking nudge already stack; keep the headline readable */
+  .light-strip h3 { font-size: 24px; }
+}
+
+@media (max-width: 480px) {
+  .stat-tiles { grid-template-columns: 1fr 1fr; }
+  .area-col ul { grid-template-columns: 1fr; }
+  .btn { padding: 13px 18px; }
+  .display { font-size: clamp(32px, 9vw, 40px); }
 }

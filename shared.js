@@ -13,16 +13,21 @@
     <a href="index.html" class="logo">
       <img src="assets/dfd-logo.png" alt="Diamond Finish Detailing" class="logo-img">
     </a>
-    <ul class="nav-links">
-      ${navItem('index.html', 'Home')}
-      ${navItem('auto.html', 'Auto')}
-      ${navItem('marine.html', 'Marine')}
-      ${navItem('ceramic.html', 'Ceramic Coating')}
-      ${navItem('contact.html', 'Contact')}
-    </ul>
-    <div class="nav-cta">
-      <span class="nav-phone">(781) 424-3314</span>
-      <a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR" class="btn btn-primary" target="_blank" rel="noopener">Book Online <span class="arrow">→</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="primary-nav">
+      <ul class="nav-links">
+        ${navItem('index.html', 'Home')}
+        ${navItem('auto.html', 'Auto')}
+        ${navItem('marine.html', 'Marine')}
+        ${navItem('ceramic.html', 'Ceramic Coating')}
+        ${navItem('contact.html', 'Contact')}
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:7814243314" class="nav-phone">(781) 424-3314</a>
+        <a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR" class="btn btn-primary" target="_blank" rel="noopener">Book Online <span class="arrow">→</span></a>
+      </div>
     </div>
   </div>
 </header>`;
@@ -89,6 +94,24 @@
     const f = document.getElementById('site-footer');
     if (h) h.outerHTML = header;
     if (f) f.outerHTML = footer;
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('primary-nav');
+    if (toggle && menu) {
+      const setOpen = (open) => {
+        menu.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      };
+      toggle.addEventListener('click', () => {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      // Close after tapping a link
+      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+      // Close on Escape
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+    }
 
     // Resolve <img data-img="key"> to actual Unsplash URLs
     if (window.IMAGES) {
