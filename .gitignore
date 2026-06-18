@@ -1,2 +1,7 @@
 .vercel
 node_modules
+package.json
+package-lock.json
+optimize-images.mjs
+transform-images.mjs
+.DS_Store

@@ -1443,7 +1443,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
      overflow at 390px. !important overrides the elements' inline styles. */
   .stat-tiles { grid-template-columns: repeat(3, 1fr) !important; gap: 8px !important; }
   .stat-tile { padding: 12px 8px !important; display: flex !important;
-    flex-direction: column; justify-content: center; align-items: center; }
+    flex-direction: column; justify-content: flex-start; align-items: center; }
   .stat-num { font-size: 17px !important; }
   .stat-label { font-size: 9px !important; letter-spacing: 0; }
   .m-stack { grid-template-columns: 1fr !important; }
