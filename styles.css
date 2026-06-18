@@ -1,4 +1,4 @@
-/* Diamond Finish Detailing — Shared Design System */
+/* Diamond Finish Detailing - Shared Design System */
 
 :root {
   /* Brand */
@@ -7,7 +7,7 @@
   --text-primary: #FFFFFF;
   --bg-primary: #000000;
 
-  /* Supporting — strict black/white/blue only */
+  /* Supporting - strict black/white/blue only */
   --bg-surface: #000000;
   --bg-muted: #000000;
   --border: #FFFFFF;
@@ -24,7 +24,7 @@
   --container-max: 1280px;
   --container-px: clamp(24px, 5vw, 64px);
 
-  /* Radius — bumped for friendlier, more current feel */
+  /* Radius - bumped for friendlier, more current feel */
   --radius-button: 8px;
   --radius-card: 20px;
   --radius-pill: 999px;
@@ -151,7 +151,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   top: 38px;
   margin-top: -1px;
   z-index: 1000;
-  /* Solid, opaque black — no translucency and no backdrop-filter. A
+  /* Solid, opaque black - no translucency and no backdrop-filter. A
      backdrop-filter on a sticky translucent bar makes Chrome paint a bright
      1px fringe at its bottom edge (the white line). Removing the filter and
      the transparency eliminates the fringe at its source. */
@@ -940,7 +940,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-split-form .field textarea { height: 44px; }
 .hero-split-form .field textarea { min-height: 88px; height: auto; }
 
-/* Section variants — light & dark rhythm */
+/* Section variants - light & dark rhythm */
 .section-light {
   background: var(--light-strip);
   color: #000;
@@ -963,7 +963,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .section-light .pricing-card ul li { color: #000; }
 .section-light .pricing-card .best-for { color: #000; border-color: #000; }
 
-/* Tight section — for short, single-purpose blocks */
+/* Tight section - for short, single-purpose blocks */
 .section-tight { padding: 48px 0; }
 
 /* Light tinted backgrounds for visual rhythm */
@@ -1073,7 +1073,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .review-strip .big-stars {
   font-size: 22px; letter-spacing: 4px; color: var(--accent);
 }
-/* Booking nudge — small interstitial blue strip */
+/* Booking nudge - small interstitial blue strip */
 .booking-nudge {
   background: var(--accent);
   color: var(--text-on-accent);
@@ -1105,7 +1105,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .booking-nudge .btn-on-blue-outline:hover { background: #000000; color: #FFFFFF; }
 
-/* Photo-backdrop section — full-bleed image with dark wash for legibility */
+/* Photo-backdrop section - full-bleed image with dark wash for legibility */
 .section-photo {
   position: relative;
   padding: 72px 0;
@@ -1140,7 +1140,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* ============ NEW v8: Reference-inspired upgrades ============ */
 
-/* Lighter, more transparent overlay — lets the photo come through */
+/* Lighter, more transparent overlay - lets the photo come through */
 .hero.hero-blue .hero-bg::before {
   background:
     linear-gradient(135deg, rgba(25,30,40,0.25) 0%, rgba(40,45,55,0.15) 50%, rgba(20,25,35,0.30) 100%),
@@ -1451,7 +1451,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   /* Service-area boxes: 2-up instead of ~40 full-width bars stacked one per row */
   .area-box-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
 
-  /* Consistent vertical rhythm — several sections hardcode big padding that
+  /* Consistent vertical rhythm - several sections hardcode big padding that
      made the page alternate between tight and huge gaps (the "choppy" feel) */
   .section { padding: 48px 0; }
   .section-tight, .section-sm { padding: 36px 0; }
@@ -1473,7 +1473,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   /* Light strip / booking nudge already stack; keep the headline readable */
   .light-strip h3 { font-size: 24px; }
 
-  /* Hero heading: proportional on phones — slightly smaller so it sits
+  /* Hero heading: proportional on phones - slightly smaller so it sits
      within the new 20px side margins without crowding the edges */
   .hero .display { font-size: clamp(25px, 7vw, 34px); line-height: 1.1; }
 }
