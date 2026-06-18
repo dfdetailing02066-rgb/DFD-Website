@@ -8,7 +8,7 @@
   };
 
   const header = `
-<header class="site-header">
+<header class="site-header" style="border-bottom: none !important;">
   <div class="container nav">
     <a href="index.html" class="logo">
       <img src="assets/dfd-logo.png" alt="Diamond Finish Detailing" class="logo-img">

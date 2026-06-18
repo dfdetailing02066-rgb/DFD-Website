@@ -37,7 +37,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: #000; }
 
 body {
   font-family: var(--font-sans);
@@ -144,11 +144,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ─── Header / Nav ─── */
 .site-header {
   position: sticky;
-  top: 39px;
+  /* Overlap the promo strip by ~1px. The strip renders ~40.1px tall, so
+     pinning the header a touch higher tucks it under the strip (which has a
+     higher z-index) and prevents a sub-pixel seam where the page background
+     would otherwise bleed through as a thin white line. */
+  top: 38px;
+  margin-top: -1px;
   z-index: 1000;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  /* Solid, opaque black — no translucency and no backdrop-filter. A
+     backdrop-filter on a sticky translucent bar makes Chrome paint a bright
+     1px fringe at its bottom edge (the white line). Removing the filter and
+     the transparency eliminates the fringe at its source. */
+  background: #000;
 }
 .nav {
   display: flex;
@@ -287,6 +294,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   overflow: hidden;
   background: var(--bg-primary);
+  /* Pull up 1px under the header so no sub-pixel rounding gap can open at the
+     header/hero seam and let the page background bleed through as a thin line. */
+  margin-top: -1px;
 }
 .hero-bg {
   position: absolute;
@@ -299,6 +309,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: scale(1.02);
 }
 .hero-bg::before {
   content: "";
