@@ -58,8 +58,6 @@
           <li><a href="index.html#service-areas">Service Areas</a></li>
           <li><a href="index.html#faqs">FAQs</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR" target="_blank" rel="noopener">Book Online</a></li>
-          <li><a href="contact.html">Gift Cards</a></li>
         </ul>
       </div>
       <div>
