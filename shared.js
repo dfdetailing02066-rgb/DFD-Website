@@ -55,8 +55,6 @@
           <li><a href="auto.html">Auto</a></li>
           <li><a href="marine.html">Marine</a></li>
           <li><a href="ceramic.html">Ceramic Coating</a></li>
-          <li><a href="index.html#service-areas">Service Areas</a></li>
-          <li><a href="index.html#faqs">FAQs</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
