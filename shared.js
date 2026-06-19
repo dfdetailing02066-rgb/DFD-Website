@@ -22,6 +22,7 @@
         ${navItem('auto.html', 'Auto')}
         ${navItem('marine.html', 'Marine')}
         ${navItem('ceramic.html', 'Ceramic Coating')}
+        <li><a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR/ugaZ2YrLmhEbJ33Zd6Em" target="_blank" rel="noopener">Gift Card</a></li>
         ${navItem('contact.html', 'Contact')}
       </ul>
       <div class="nav-cta">
