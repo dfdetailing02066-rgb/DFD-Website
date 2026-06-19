@@ -10,7 +10,7 @@
   const header = `
 <header class="site-header" style="border-bottom: none !important;">
   <div class="container nav">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <picture><source type="image/avif" srcset="assets/opt/dfd-logo-300.avif 300w, assets/opt/dfd-logo-600.avif 600w" sizes="(max-width: 1080px) 52px, 85px"><source type="image/webp" srcset="assets/opt/dfd-logo-300.webp 300w, assets/opt/dfd-logo-600.webp 600w" sizes="(max-width: 1080px) 52px, 85px"><img class="logo-img" src="assets/opt/dfd-logo-600.png" width="600" height="600" alt="Diamond Finish Detailing" fetchpriority="high" loading="eager" decoding="async"></picture>
     </a>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
@@ -19,11 +19,11 @@
     <div class="nav-menu" id="primary-nav">
       <ul class="nav-links">
         ${navItem('index.html', 'Home')}
-        ${navItem('auto.html', 'Auto')}
-        ${navItem('marine.html', 'Marine')}
-        ${navItem('ceramic.html', 'Ceramic Coating')}
+        ${navItem('auto', 'Auto')}
+        ${navItem('marine', 'Marine')}
+        ${navItem('ceramic', 'Ceramic Coating')}
         <li><a href="https://app.urable.com/virtual-shop/eKBgJfajP9ydNkViFCtR/ugaZ2YrLmhEbJ33Zd6Em" target="_blank" rel="noopener">Gift Cards</a></li>
-        ${navItem('contact.html', 'Contact')}
+        ${navItem('contact', 'Contact')}
       </ul>
       <div class="nav-cta">
         <a href="tel:7814243314" class="nav-phone">(781) 424-3314</a>
@@ -38,7 +38,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a href="index.html" class="logo logo-footer">
+        <a href="/" class="logo logo-footer">
           <picture><source type="image/avif" srcset="assets/opt/dfd-logo-300.avif 300w, assets/opt/dfd-logo-600.avif 600w" sizes="(max-width: 1080px) 52px, 85px"><source type="image/webp" srcset="assets/opt/dfd-logo-300.webp 300w, assets/opt/dfd-logo-600.webp 600w" sizes="(max-width: 1080px) 52px, 85px"><img class="logo-img" src="assets/opt/dfd-logo-600.png" width="600" height="600" alt="Diamond Finish Detailing" fetchpriority="high" loading="eager" decoding="async"></picture>
         </a>
         <p class="footer-tagline">Premium mobile auto and marine detailing serving Eastern Massachusetts. Licensed, insured, SystemX Certified - and backed by our 100% satisfaction guarantee.</p>
@@ -52,11 +52,11 @@
       <div>
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="auto.html">Auto</a></li>
-          <li><a href="marine.html">Marine</a></li>
-          <li><a href="ceramic.html">Ceramic Coating</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="auto">Auto</a></li>
+          <li><a href="marine">Marine</a></li>
+          <li><a href="ceramic">Ceramic Coating</a></li>
+          <li><a href="contact">Contact</a></li>
         </ul>
       </div>
       <div>
